@@ -1,1 +1,4 @@
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt update
+sudo install oracle-java8-installer
 R CMD javareconf -e
