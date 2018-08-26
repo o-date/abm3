@@ -1,15 +1,14 @@
-mkdir /opt/java && cd /opt/java
-cd /opt/java
-wget --no-cookies --no-check-certificate --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/9.0.4+11/c2514751926b4512b076cc82f959763f/jdk-9.0.4_linux-x64_bin.tar.gz
-tar -zxvf jdk-9.0.4_linux-x64_bin.tar.gz
-cd jdk-9.0.4/
-update-alternatives --install /usr/bin/java java /opt/java/jdk-9.0.4/bin/java 100  
+mkdir opt/java && cd opt/java
+cd opt/java
+wget -c --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u131-b11/d54c1d3a095b4ff2b6607d096fa80163/jdk-8u131-linux-x64.tar.gz
+cd jdk1.8.0_131/
+update-alternatives --install /usr/bin/java java /opt/java/jdk1.8.0_131/bin/java 100  
 update-alternatives --config java
-update-alternatives --install /usr/bin/javac javac /opt/java/jdk-9.0.4/bin/javac 100
+update-alternatives --install /usr/bin/javac javac /opt/java/jdk1.8.0_131/bin/javac 100
 update-alternatives --config javac
-update-alternatives --install /usr/bin/jar jar /opt/java/jdk-9.0.4/bin/jar 100
+update-alternatives --install /usr/bin/jar jar /opt/java/jdk1.8.0_131/bin/jar 100
 update-alternatives --config jar
-export JAVA_HOME=/opt/java/jdk-9.0.4/
-export JRE_HOME=/opt/java/jdk-9.0.4/jre
-export PATH=$PATH:/opt/java/jdk-9.0.4/bin:/opt/java/jdk-9.0.4/jre/bin
+export JAVA_HOME=/opt/java/jdk1.8.0_131/
+export JRE_HOME=/opt/java/jdk1.8.0_131/jre
+export PATH=$PATH:/opt/java/jdk1.8.0_131/bin:/opt/java/jdk1.8.0_131/jre/bin
 R CMD javareconf -e
