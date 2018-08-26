@@ -1,1 +1,1 @@
-r-cran-rjava
+openjdk-8-jdk
