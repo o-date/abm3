@@ -1,0 +1,27 @@
+<experiments>
+  <experiment name="experiment" repetitions="1" runMetricsEveryStep="true">
+    <setup>setup</setup>
+    <go>go</go>
+    <metric>count turtles with [ sick? ]</metric>
+    <metric>count turtles with [ immune? ]</metric>
+    <metric>count turtles with [ not sick? and not immune? ]</metric>
+    <enumeratedValueSet variable="duration">
+      <value value="20"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="turtle-shape">
+      <value value="&quot;person&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="infectiousness">
+      <value value="45"/>
+      <value value="55"/>
+      <value value="65"/>
+      <value value="75"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="number-people">
+      <value value="150"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="chance-recover">
+      <value value="75"/>
+    </enumeratedValueSet>
+  </experiment>
+</experiments>
