@@ -1,2 +1,2 @@
 R CMD javareconf -e
-R CMD javareconf 
+
