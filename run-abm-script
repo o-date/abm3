@@ -1,0 +1,13 @@
+#!/bin/bash
+
+MODEL=$1
+EXP=$2
+TABLE=$3
+
+echo "Model:      $MODEL"
+echo "Experiment: $EXP"
+echo "Table:      $TABLE"
+
+WORKINGDIR=$PWD
+
+java -server -Dcom.sun.media.jai.disableMediaLib=true  -cp .:$WORKINGDIR/NetLogo6.0.4/app/netlogo-6.0.4.jar  org.nlogo.headless.Main --model $MODEL --experiment $EXP  --table $TABLE
