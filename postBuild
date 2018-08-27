@@ -1,3 +1,2 @@
 R CMD javareconf -e
-export LD_LIBRARY_PATH=$JAVA_LD_LIBRARY_PATH
-R CMD javareconf -e
+
