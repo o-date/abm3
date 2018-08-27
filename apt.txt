@@ -1,4 +1,3 @@
 openjdk-8-jdk
 openjdk-8-jre
-libgdal1-dev 
-libproj-dev
+
